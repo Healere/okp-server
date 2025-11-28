@@ -14,7 +14,7 @@ func InitDB() *gorm.DB {
 	if len(global.Config.DB) == 0 {
 		logrus.Fatalf("未配置数据库")
 	}
-
+	//测试
 	dc := global.Config.DB[0]
 
 	// TODO: pgsql的支持
